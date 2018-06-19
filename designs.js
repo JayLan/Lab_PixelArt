@@ -1,7 +1,8 @@
 
 
 
-var sub_grid = document.getElementById('sub_1');
+var cur_color = document.getElementById('colorPicker');
+const sub_grid = document.getElementById('sub_1');
 const CANVAS = document.getElementById("pixelCanvas");
 
 function makeGrid() {
@@ -33,4 +34,10 @@ sub_grid.addEventListener('click', function (evt) {
 
   makeGrid();
 
+});
+
+CANVAS.addEventListener('click', function(evt){
+  if(evt.target.nodeName == "TD"){
+    evt.target.style.cssText = `background: ${cur_color.value}`;
+  }
 });
