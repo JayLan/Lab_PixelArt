@@ -2,7 +2,6 @@
 
 
 var sub_grid = document.getElementById('sub_1');
-
 const CANVAS = document.getElementById("pixelCanvas");
 
 function makeGrid() {

@@ -3,9 +3,18 @@ body {
 }
 
 h1 {
-  font-family: Monoton;
+  font-family: 'SFPixelateShadedBold';
   font-size: 70px;
   margin: 0.2em;
+  color: #ff0000;
+  background: red;
+  background: -webkit-linear-gradient(left,#ff0000, #ffa500, #ffd900, #008000, #0000ff,#4b0082, #ee82ee);
+  background: -o-linear-gradient(right, #ff0000, #ffa500, #ffd900, #008000, #0000ff,#4b0082, #ee82ee);
+  background: -moz-linear-gradient(right, #ff0000, #ffa500, #ffd900, #008000, #0000ff,#4b0082, #ee82ee);
+  background: linear-gradient(to right, #ff0000, #ffa500, #ffd900, #008000, #0000ff,#4b0082, #ee82ee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
 }
 
 h2 {
